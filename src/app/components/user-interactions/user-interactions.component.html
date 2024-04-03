@@ -1,0 +1,10 @@
+<div class="interactions-container">
+    @for (b of buttons; track b) {
+        <div class="button-container">
+            <button mat-mini-fab color="primary">
+                <mat-icon>{{b.icon}}</mat-icon>
+            </button>
+            {{b.value}}
+        </div>
+    }
+</div>

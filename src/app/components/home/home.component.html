@@ -1,0 +1,9 @@
+<div class="tab-container">
+    <div class="credit-cards-container">
+        @for (creditCard of creditCards; track creditCard) {
+            <credit-card class="card" [creditCard]="creditCard"></credit-card>
+        }
+    </div>
+    <user-interactions></user-interactions>
+    <transaction-history></transaction-history>
+</div>

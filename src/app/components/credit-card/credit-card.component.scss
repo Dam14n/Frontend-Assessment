@@ -1,0 +1,23 @@
+.credit-card-container {
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+  border-radius: 12px;
+  background: linear-gradient(150deg, grey, white);;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & .amount {
+    color: white;
+    font-size: 20px;
+  }
+
+  & .card-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

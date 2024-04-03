@@ -1,0 +1,56 @@
+.transactions-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+
+  & .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  & .transaction-group-container {
+    display: flex;
+    flex-direction: column;
+
+    & .transaction-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      & .transaction-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 20px;
+
+        & .name {
+          font-weight: bold;
+          font-size: 15px;
+        }
+
+        & .date {
+          font-weight: lighter;
+          font-size: 13px;
+        }
+      }
+
+      & .transaction-value {
+        font-weight: bolder;
+        font-size: 20px;
+
+        &.in {
+          color: green;
+        }
+
+        &.out {
+          color: red;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class="transactions-container">
+    <div class="header">
+        <h1>Transactions</h1>
+        <button mat-icon-button color="primary">
+            <mat-icon>search</mat-icon>
+        </button>
+    </div>
+    @for (group of transactionGroups; track group) {
+        <div class="transaction-group-container">
+            <h3>{{ group.date | prettyDate }}</h3>
+            <div>
+                @for (transaction of group.transactions; track transaction) {
+                    <div class="transaction-container">
+                        <img [src]="transaction.icon" height="32" width="32">
+                        <div class="transaction-description">
+                            <span class="name">{{ transaction.name }}</span>
+                            <span class="date">{{ transaction.date | date}}</span>
+                        </div>
+                        <span class="transaction-value"
+                              [class.in]="incomingTransaction(transaction.transactionType)"
+                              [class.out]="!incomingTransaction(transaction.transactionType)">
+                            {{ transaction.value | currency }}
+                        </span>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
