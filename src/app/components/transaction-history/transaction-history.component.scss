@@ -1,12 +1,17 @@
 .transactions-container {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 32px;
   padding: 10px;
 
   & .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 15px;
+
+    & ::ng-deep .mat-mdc-icon-button {
+      color: black;
+    }
   }
 
   & .transaction-group-container {

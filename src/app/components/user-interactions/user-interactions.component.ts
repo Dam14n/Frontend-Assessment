@@ -34,7 +34,7 @@ export class UserInteractionsComponent implements OnInit {
             new ButtonConfiguration("outbox", "Send"),
             new ButtonConfiguration("archive", "Receive"),
             new ButtonConfiguration("account_balance", "Utilities"),
-            new ButtonConfiguration("account_balance", "Stats"),
+            new ButtonConfiguration("pie_chart", "Stats"),
         ]
     }
 
