@@ -2,7 +2,7 @@
     <div class="amount">{{ creditCard.value | currency }}</div>
     <div class="card-description">
         <label class="card-number">{{ creditCard.cardNumber | creditCardNumber}}</label>
-        <img [src]="creditCard.icon" height="60" width="60"/>
+        <img [ngSrc]="creditCard.icon" height="60" width="60" alt="Credit Card icon"/>
     </div>
 
 </div>

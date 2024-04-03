@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CreditCard } from "../../models/credit-card";
-import { CurrencyPipe } from "@angular/common";
+import { CurrencyPipe, NgOptimizedImage } from "@angular/common";
 import { CreditCardNumberPipe } from "../../pipes/credit-card-number.pipe";
 
 @Component({
@@ -8,7 +8,8 @@ import { CreditCardNumberPipe } from "../../pipes/credit-card-number.pipe";
   standalone: true,
   imports: [
     CurrencyPipe,
-    CreditCardNumberPipe
+    CreditCardNumberPipe,
+    NgOptimizedImage
   ],
   templateUrl: './credit-card.component.html',
   styleUrl: './credit-card.component.scss'
